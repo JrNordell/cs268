@@ -1,0 +1,40 @@
+body {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#mainImage{
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    background: url('images/pizza_background.jpg');
+    z-index: 1;
+}
+#menuBar{
+    position: absolute;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    z-index: 2;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#menuBar ul{
+    align-content: center;
+    list-style-type: none;
+
+}
+#menuBar li{
+    display: inline;
+    margin-left: 75px;
+    margin-right: 75px;
+
+}
+#menuBar a{
+    color: white;
+    size: 18px;
+    text-decoration: none;
+    font-family: "cabin-sketch", sans-seriff;
+}
