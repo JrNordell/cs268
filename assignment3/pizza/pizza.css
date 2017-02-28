@@ -22,17 +22,18 @@ body {
     filter: alpha(opacity=80);
 }
 #menuBar ul{
-    align-content: center;
+    margin: 0px;
+    text-align: center;
     list-style-type: none;
-    font-size: 18px;
 }
 #menuBar li{
     display: inline;
-    margin-left: 75px;
-    margin-right: 75px;
 
 }
 #menuBar a{
+    font-size: 18px;
+    margin-left: 75px;
+    margin-right: 75px;
     color: white;
     text-decoration: none;
     font-family: "cabin-sketch", sans-serif;
