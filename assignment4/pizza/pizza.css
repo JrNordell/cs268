@@ -1,0 +1,128 @@
+body {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#mainImage{
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    background: url('images/pizza_background.jpg');
+    z-index: 1;
+}
+#menuBar{
+    position: absolute;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    z-index: 2;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#menuBar ul{
+    margin: 0px;
+    text-align: center;
+    list-style-type: none;
+}
+#menuBar li{
+    display: inline;
+
+}
+#menuBar a{
+    font-size: 18px;
+    margin-left: 75px;
+    margin-right: 75px;
+    color: white;
+    text-decoration: none;
+    font-family: "cabin-sketch", sans-serif;
+}
+#menuBar a:hover{
+    color: #db536b;
+    text-decoration: underline;
+}
+#mainImageText{
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    padding: 25px;
+    font-size: 20px;
+    font-family: "cabin-sketch", sans-serif;
+    color: white;
+    align-items: center;
+    background-color: black;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+h1{
+    font-size: 84px;
+    font-weight: bold;
+    margin: 0px;
+}
+#subContentLeft{
+    position: absolute;
+    width: 263px;
+    height: 145px;
+    top: 400px;
+    left: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 10px;
+    background: #d46b34;
+    font-family: "passion-one", sans-serif;
+    font-size: 40px;
+    color: black;
+}
+#subContentMiddle{
+    position: absolute;
+    width: 264px;
+    height: 145px;
+    top: 400px;
+    left: 333px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 10px;
+    background: #db536b;;
+    font-family: "passion-one", sans-serif;
+    font-size: 40px;
+    color: black;
+}
+#subContentRight{
+    position: absolute;
+    width: 263px;
+    height: 145px;
+    top: 400px;
+    left: 667px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 10px;
+    background: #f5c12d;
+    font-family: "passion-one", sans-serif;
+    font-size: 40px;
+    color: black;
+}
+.imageFloatLeft{
+    float: left;
+    padding-right: 25px;
+}
+#footer{
+    position: absolute;
+    width: 998px;
+    height: 18px;
+    top: 595px;
+    left: 0px;
+    padding-top: 5px;
+    border: dotted;
+    border-width: thin;
+    text-align: center;
+    font-size: 14px;
+    font-color: #003300;
+    font-family: "cabin-sketch", sans-serif;
+}
