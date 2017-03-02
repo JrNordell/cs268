@@ -1,28 +1,41 @@
 body {
-    width: 1000px;
-    position: relative;
     margin: 0 auto;
 }
 
 #mainImage{
-    position: absolute;
-    width: 1000px;
-    height: 400px;
+    background-size: cover;
     background: url('images/pizza_background.jpg');
     z-index: 1;
 }
+#mainImageText{
+    padding: 2.5%;
+    font-size: 1.25em;
+    font-family: "cabin-sketch", sans-serif;
+    color: white;
+    align-items: center;
+    background-color: black;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    display: inline-block;
+    margin-top: 16%;
+    margin-bottom: 3%;
+    margin-left: 2.5%;
+}
+#mainImageText h1{
+    font-size: 4.2em;
+    font-weight: bold;
+    margin: 0 auto;
+}
 #menuBar{
-    position: absolute;
-    width: 1000px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1.0%;
+    padding-bottom: 1.0%;
     background-color: #000000;
     z-index: 2;
     opacity: 0.8;
     filter: alpha(opacity=80);
 }
 #menuBar ul{
-    margin: 0px;
+    margin: 0 auto;
     text-align: center;
     list-style-type: none;
 }
@@ -31,9 +44,9 @@ body {
 
 }
 #menuBar a{
-    font-size: 18px;
-    margin-left: 75px;
-    margin-right: 75px;
+    font-size: 1.125em;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     color: white;
     text-decoration: none;
     font-family: "cabin-sketch", sans-serif;
@@ -42,87 +55,119 @@ body {
     color: #db536b;
     text-decoration: underline;
 }
-#mainImageText{
-    position: absolute;
-    top: 200px;
-    left: 25px;
-    padding: 25px;
-    font-size: 20px;
-    font-family: "cabin-sketch", sans-serif;
-    color: white;
-    align-items: center;
-    background-color: black;
-    opacity: .8;
-    filter: alpha(opacity=80);
-}
-h1{
-    font-size: 84px;
-    font-weight: bold;
-    margin: 0px;
-}
+
 #subContentLeft{
-    position: absolute;
-    width: 263px;
-    height: 145px;
-    top: 400px;
-    left: 0px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin: 10px;
+    width: 26.3%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    margin: 1.0%;
     background: #d46b34;
     font-family: "passion-one", sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     color: black;
+    float: left;
 }
 #subContentMiddle{
-    position: absolute;
-    width: 264px;
-    height: 145px;
-    top: 400px;
-    left: 333px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin: 10px;
+    width: 26.4%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    margin: 1.0%;
     background: #db536b;;
     font-family: "passion-one", sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     color: black;
+    float: left;
 }
 #subContentRight{
-    position: absolute;
-    width: 263px;
-    height: 145px;
-    top: 400px;
-    left: 667px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin: 10px;
+    width: 26.3%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    margin: 1.0%;
     background: #f5c12d;
     font-family: "passion-one", sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     color: black;
+    float: left;
 }
+
 .imageFloatLeft{
     float: left;
-    padding-right: 25px;
+    padding-right: 10%;
 }
+
+@media only screen and (max-width: 905px) {
+
+    .imageFloatLeft {
+        display: block;
+    }
+}
+@media only screen and (max-width: 451px){
+
+    #subContentLeft{
+        display: inline-block;
+        width: 93%;
+        padding-bottom: 1.5%;
+        padding-top: 1.5%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        margin: 1.0%;
+        background: #d46b34;
+        font-family: "passion-one", sans-serif;
+        font-size: 2.5em;
+        color: black;
+    }
+    #subContentMiddle{
+        display: inline-block;
+        width: 93%;
+        padding-bottom: 1.5%;
+        padding-top: 1.5%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        margin: 1.0%;
+        background: #db536b;;
+        font-family: "passion-one", sans-serif;
+        font-size: 2.5em;
+        color: black;
+
+    }
+    #subContentRight{
+        display: inline-block;
+        width: 93%;
+        padding-bottom: 1.5%;
+        padding-top: 1.5%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        margin: 1.0%;
+        background: #f5c12d;
+        font-family: "passion-one", sans-serif;
+        font-size: 2.5em;
+        color: black;
+
+    }
+
+}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+}
+
 #footer{
-    position: absolute;
-    width: 998px;
-    height: 18px;
-    top: 595px;
-    left: 0px;
-    padding-top: 5px;
+    /*position: relative;*/
+    width: 99.8%;
+    padding-top: 0.5%;
     border: dotted;
     border-width: thin;
     text-align: center;
-    font-size: 14px;
+    font-size: .875em;
     font-color: #003300;
     font-family: "cabin-sketch", sans-serif;
+    display: inline-block;
+    padding-bottom: .25%;
 }
