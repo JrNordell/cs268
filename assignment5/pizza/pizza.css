@@ -102,7 +102,7 @@ body {
     padding-right: 10%;
 }
 .formTable{
-    border: 0px;
+    border: 0;
 }
 
 .formLabel{
@@ -200,7 +200,7 @@ body {
 #orderForm h1{
     text-align: center;
     margin-top: 0;
-    font-family: "cabin-sketch";
+    font-family: "cabin-sketch", sans-serif;
     font-size: 2.5em;
 }
 
@@ -212,7 +212,7 @@ body {
     border-width: thin;
     text-align: center;
     font-size: .875em;
-    font-color: #003300;
+    color: #003300;
     font-family: "cabin-sketch", sans-serif;
     display: inline-block;
     padding-bottom: .25%;
