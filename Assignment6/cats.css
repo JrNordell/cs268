@@ -1,3 +1,5 @@
+
+/*Text Tag Manipulation*/
 body{
     position: relative;
     margin: 0 auto;
@@ -13,10 +15,13 @@ h2{
     margin-top: 0px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", sans-serif;
 }
-#container{
 
-}
 
+
+
+
+
+/*Class Definition*/
 .textBoxBlack{
     width: 230px;
     height: 230px;
@@ -90,17 +95,30 @@ h2{
     border-style: dotted;
     border-width: thin;
 }
+
+
+
+
+
+
+/*Id Defintion*/
+#container{
+    opacity: 1;
+}
+
 #classifyval{
     font-size: 2.25em;
     padding-top: 150px;
     font-family: "Cambria", "Hoefler Text", "Liberation Serif", "Times", "Times New Roman", serif;
 
 }
+
 #classifycat{
     font-size: 1em;
     font-weight: bold;
     font-family: "Cambria", "Hoefler Text", "Liberation Serif", "Times", "Times New Roman", serif;
 }
+
 #nav{
     width: 100%;
     margin-top: 75px;
@@ -108,6 +126,7 @@ h2{
     font-size: 1.25em;
     font-family: "Cambria", "Hoefler Text", "Liberation Serif", "Times", "Times New Roman", serif;
 }
+
 #footer {
     display:inline-block;
     width:99.8%;
@@ -120,6 +139,18 @@ h2{
     font-size:.75em;
     color:#003300;
 }
+
+#popupContainer{
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+}
+
+
+
+
+
+/*link manipulation*/
 #nav a:link{
     color: white;
     text-decoration: none;
@@ -129,5 +160,19 @@ h2{
     color: white;
 }
 #nav a:hover{
+    text-decoration: underline;
+}
+.audioBoxBlack a{
+    color: white;
+    text-decoration: none;
+}
+.audioBoxBlack a:hover{
+    text-decoration: underline;
+}
+.audioBoxWhite a{
+    color: black;
+    text-decoration: none;
+}
+.audioBoxWhite a:hover{
     text-decoration: underline;
 }
