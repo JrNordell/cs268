@@ -5,6 +5,7 @@
     <title>Cats|Media</title>
     <link rel="stylesheet" type="text/css" href="cats.css">
     <script src="cats.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
     <body>
     <div id="container">
@@ -22,7 +23,7 @@
         </div>
         <div class="imageBox">
             <img src="images/nyan_cat.jpg" alt="Picture of nyan cat"
-                 onclick="makeClear(1, 'images/cat3-large.jpg')"/>
+                 onclick="popupVideo(1, 'videos/nyan_cat.mp4')"/>
         </div>
         <div class="imageBox">
             <img src="images/cat3.jpg" alt="Picture of Housecat"
@@ -59,8 +60,12 @@
         <div id="footer">Site by Jack. &copy;2017</div>
     </div>
         <div id="popupContainer">
-            <img src="" alt="large version of photo" id="empty"
+            <img src=""  id="empty"
             onclick="makeClear(0,'')">
+            <!--if you double click the video it will go to the center, unknown why this is the case-->
+            <video width="500px" height="333px" id="vidempty" onclick="popupVideo(0,'')" autoplay>
+                <source src="">
+            </video>
         </div>
     </body>
 </html>
